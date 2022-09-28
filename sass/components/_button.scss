@@ -1,0 +1,89 @@
+.btn-icon{
+    @include bgTrans;
+    @include border-none;
+}
+
+%btn-shared{
+    height: 50px;
+    min-width: 174px;
+    @include paddingX(12px);
+    @include inline-flex-center;
+    font-family: $font-inter;
+    font-weight: 600;
+
+    @include breakpoint-down(sm){
+        height: 48px;
+        min-width: 160px;
+    }
+
+    @include breakpoint-down(xs){
+        height: 44px;
+        min-width: 160px;
+    }
+}
+
+.btn-primary{
+    @extend %btn-shared;
+    background-color: $clr-deep-skyblue;
+    @include border(1px, solid, $clr-deep-skyblue!important);
+    &:hover{
+        @include bgTrans;
+        border-color: $clr-white!important;
+    }
+
+    &-no-br{
+        @include border-radius(0px!important);
+    }
+}
+
+.btn-secondary{
+    @extend %btn-shared;
+    background-color: $clr-blue;
+    @include border(1px, solid, $clr-blue!important);
+    &:hover{
+        @include bgTrans;
+        border-color: $clr-white!important;
+    }
+}
+
+.btn-primary-hover-o{
+    @extend %btn-shared;
+    background-color: $clr-deep-skyblue;
+    @include font-size(20px, 22px);
+    font-weight: 700;
+    font-family: $font-inter;
+    color: $clr-white;
+    @include border(2px, solid, $clr-deep-skyblue);
+    @include border-radius(0px!important);
+    @include def_transition;
+
+    &:hover{
+        color: $clr-deep-skyblue;
+        border-color: $clr-deep-skyblue!important;
+        @include bgTrans;
+    }
+
+    @include breakpoint-down(sm){
+        @include font-size(16px);
+    }
+
+    @include breakpoint-down(xs){
+        @include font-size(14px);
+    }
+}
+
+.btn-trans-o{
+    min-width: 112px;
+    min-height: 30px;
+    @include border(1px, solid, $clr-gray34);
+    @include font-size(14px, 21px);
+    font-family: $font-poppins!important;
+    font-weight: 300;
+    padding: 7px 12px;
+
+    &:hover{
+        color: $clr-white!important;
+        background-color: $clr-gray;
+        border-color: $clr-gray;
+    }
+}

@@ -1,0 +1,229 @@
+.tp-navbar{
+    @include paddingY(16px);
+    box-shadow: 0px 4px 4px 0px #C0C0C01A;
+
+    @include breakpoint-down(sm){
+        @include paddingY(14px);
+    }
+
+    @include breakpoint-down(xs){
+        @include paddingY(10px);
+    }
+
+    .tp-nav-blk-1{
+        height: 96px;
+        @include border(0.5px, solid, rgba(0, 0, 0, 0.1), bottom);
+
+        @include breakpoint-up(lg){
+            @include border-none();
+        }
+
+        @include breakpoint-down(sm){
+            height: 80px;
+        }
+
+        @include breakpoint-down(xs){
+            height: 70px;
+        }
+
+        .navbar-brand{
+            width: 110px;
+            @include breakpoint-down(sm){
+                width: 90px;
+            }
+            @include breakpoint-down(xs){
+                width: 70px;
+            }
+        }
+    }
+    
+    .tp-nav-blk-2{
+        margin-top: 16px!important;
+
+        @include breakpoint-up(lg){
+            @include flush--top;
+        }
+
+        .tp-cat-dropdown{
+            .dropdown-menu{
+                .dropdown-item{
+                    @include paddingY(10px!important);
+
+                    &:hover{
+                        @include bgColor(rgba(0, 0, 0, 0.03));
+                    }
+
+                    @include breakpoint-down(sm){
+                        @include font-size(15px);
+                        @include paddingY(8px!important);
+                    }
+
+                    @include breakpoint-down(xs){
+                        @include font-size(13px);
+                        @include paddingY(6px!important);
+                    }
+                }
+            }
+
+            @include breakpoint-up(lg){
+                @include marginX(14px!important);
+            }
+
+            @include breakpoint-up(xxl){
+                margin-right: 67px!important;
+
+                .tp-cat-btn-txt{
+                    @include font-size(18px);
+                }
+            }
+        }
+
+        .tp-nav-search{
+            .input-group{
+                @include border(1px, solid, #00000033);
+                @include border-radius(5px);
+                min-width: 270px;
+                height: 40px;
+
+                @include breakpoint-up(md){
+                    height: 45px;
+                }
+
+                @include breakpoint-up(lg){
+                    min-width: 220px;
+                    height: 48px;
+                }
+
+                @include breakpoint-up(xxl){
+                    min-width: 289px;
+                }
+
+                .form-control{
+                    @include input-placeholder{
+                        color: #00000066;
+                        font-weight: 500;
+                        font-size: 20px;
+                    }
+                }
+
+                .input-group-text{
+                    img{
+                        width: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    .tp-nav-blk-3{
+        @include position(fixed, 0, 0, null, null, 999);
+        @include bgColor($clr-white);
+        @include box(100%);
+        transform: translateX(100%);
+        @include def_transition;
+
+        @include breakpoint-up(sm){
+            @include box(320px!important, 100%);
+        }
+
+        @include breakpoint-up(lg){
+            @include position(relative, 0, 0, 0, 0);
+            box-shadow: none;
+            transform: translateX(0);
+            @include box(100%!important, 100%);
+        }
+
+        #tp-sidebar-hide-btn{
+            @include position(absolute, 40px, 15px);
+            @include bgColor($clr-blue);
+            display: block;
+            @include box(26px);
+            color: $clr-white;
+            @include border-circle;
+            @include font-size(10px);
+            @include def_transition;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        .tp-nav-list{
+            padding: 28px;
+            margin-top: 32px!important;
+
+            @include breakpoint-up(lg){
+                @include flush;
+                @include hard;
+            }
+
+            .tp-nav-itm{
+                margin-bottom: 14px!important;
+                @include border(0.5px, solid, rgba(0, 0, 0, 0.05), bottom);
+                padding-bottom: 14px;
+
+                @include breakpoint-up(lg){
+                    @include flush;
+                    @include hard;
+                    @include border-none;
+                    margin-left: 20px!important;
+                }
+
+                @include breakpoint-up(xxl){
+                    margin-left: 43px!important;
+                }
+
+                .tp-nav-link{
+                    @include def_transition;
+                    @include font-size(16px, normal, 0.9px);
+                    @include truncateText;
+
+                    &:hover{
+                        margin-left: 43px!important;
+
+                        @include breakpoint-up(lg){
+                            @include flush--left;
+                        }
+                    }
+
+                    @include breakpoint-up(sm){
+                        @include font-size(18px);
+                    }
+
+                    @include breakpoint-up(md){
+                        @include font-size(20px);
+                    }
+
+                    @include breakpoint-up(lg){
+                        @include font-size(17px);
+                    }
+                    
+                    @include breakpoint-up(xxl){
+                        @include font-size(18px);
+                    }
+                }
+            }
+        }
+
+        @include breakpoint-up(lg){
+            margin-left: 14px!important;
+        }
+
+        @include breakpoint-up(xl){
+            width: auto!important;
+        }
+    }
+    @include breakpoint-up(lg){
+        height: 96px;
+
+        .tp-nav-blk-1{
+            height: auto;
+        }
+    }
+}
+
+// utilities classes related with JS
+.show-sidebar-nav{
+    transform: translateX(0)!important;
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Aura</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- stylesheets -->
+        <!-- boostrap 5.2 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <!-- line icons -->
+        <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- custom css -->
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+
+        <div class = "pg-about">
+            <div class = "pg-wrapper h-100">
+                <nav class = "tp-navbar px-3">
+                    <div class = "container">
+                        <div class = "tp-navbar-wrapper d-lg-flex justify-content-lg-between align-items-lg-center justify-content-xl-end">
+                            <!-- brand and toggler -->
+                            <div class = "tp-nav-blk-1 d-flex justify-content-between me-auto">
+                                <a href = "index.html" class = "navbar-brand d-flex align-items-center">
+                                    <img src = "assets/images/site-logo.svg" alt = "aura site logo">
+                                </a>
+                                <button type = "button" class = "btn-icon fs-24 d-lg-none" id = "tp-sidebar-show-btn">
+                                    <i class="lni lni-menu"></i>
+                                </button>
+                            </div>
+                            <!-- end of brand and toggler -->
+                            <div class = "tp-nav-blk-2 d-flex align-items-center justify-content-between">
+                                <div class = "tp-cat-dropdown dropdown">
+                                    <button class = "btn dropdown-toggle text-uppercase text-gray34 fw-5" type = "button" data-bs-toggle = "dropdown" aria-expanded="false">
+                                        <span class = "tp-cat-btn-txt d-none d-sm-inline-block me-2">all categories</span>
+                                        <span class = "tp-cat-btn-icon d-sm-none">
+                                            <i class="lni lni-grid-alt"></i>
+                                        </span>
+                                    </button>
+
+                                    <ul class = "dropdown-menu">
+                                        <li><a class = "dropdown-item" href = "#">Clothing</a></li>
+                                        <li><a class = "dropdown-item" href = "#">Accessories</a></li>
+                                        <li><a class = "dropdown-item" href = "#">Books & Learning</a></li>
+                                        <li><a class = "dropdown-item" href = "#">Apparels & Accessories</a></li>
+                                        <li><a class = "dropdown-item" href="">Mobile Phones & Accessories</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class = "tp-nav-search">
+                                    <form>
+                                        <div class = "input-group">
+                                            <input type = "text" class = "form-control bg-transparent border-0" placeholder="Search">
+                                            <span class = "input-group-text bg-transparent border-0">
+                                                <img src = "assets/images/misc-icons/search-icon.svg" alt = "">
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class = "tp-nav-blk-3 w-100">
+                                <button type = "button" class = "btn-icon d-lg-none" id = "tp-sidebar-hide-btn">
+                                    <i class="lni lni-close"></i>
+                                </button>
+                                <div class = "tp-navbar-nav">
+                                    <ul class = "tp-nav-list d-lg-flex align-items-lg-center justify-content-lg-end">
+                                        <li class = "tp-nav-itm">
+                                            <a href = "index.html" class = "tp-nav-link text-capitalize text-gray34 fw-5 font-inter">home</a>
+                                        </li>
+                                        <li class = "tp-nav-itm">
+                                            <a href = "about.html" class = "tp-nav-link text-capitalize text-gray34 fw-5 font-inter">about us</a>
+                                        </li>
+                                        <li class = "tp-nav-itm">
+                                            <a href = "blog.html" class = "tp-nav-link text-capitalize text-gray34 fw-5 font-inter">our blog</a>
+                                        </li>
+                                        <li class = "tp-nav-itm">
+                                            <a href = "contact.html" class = "tp-nav-link text-capitalize text-gray34 fw-5 font-inter">contact us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <header class = "hdr" id = "hdr">
+                    <!-- header hero slider -->
+                    <div class = "hdr-cnt hdr-slides">
+                        <div class = "hdr-itm hdr-itm-1 text-center text-lg-start py-6">
+                            <div class = "container">
+                                <div class = "row hdr-itm-cnt text-white align-items-lg-center">
+                                    <div class = "hdr-itm-l col-lg-6">
+                                        <div class = "hdr-itm-l-cnt">
+                                            <p class = "hero-txt fw-5">Affordable Home Applicances</p>
+                                            <h1 class = "hero-h fw-7">A warm winter with Aura Kettle</h1>
+                                            <a href = "#" class = "btn hero-btn text-uppercase btn-primary">explore</a>
+                                        </div>
+                                    </div>
+                                    <div class = "hdr-itm-r mt-5 col-lg-6 mt-lg-0">
+                                        <div class = "hero-img d-flex align-items-center justify-content-center justify-content-xxl-end">
+                                            <img src = "assets/images/pg-index/hero-product-img-1.png" alt = "product image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of header hero slider -->
+                </header>
+
+                <main>
+                    <section class = "aura-about-sc1">
+                        <div class = "container">
+                            <div class = "aura-about-sc1-cnt">
+                                <div class = "aura-about-sc1-itms row">
+                                    <div class = "col-md-6 col-lg-4 mb-4">
+                                        <div class = "aura-about-sc1-itm text-center d-flex flex-column align-items-center justify-content-between h-100">
+                                            <div class = "about-sc1-itm-ico">
+                                                <img src = "assets/images/pg-about/mission-icon.svg" alt = "">
+                                            </div>
+                                            <div class = "about-sc1-itm-title sc-title-md">
+                                                <h6 class = "text-uppercase text-gray34">mission</h6>
+                                            </div>
+                                            <p class = "text mt-lg-3 mt-2">Lorem ipsum doamet, consectetur adipiscing  </p>
+                                        </div>
+                                    </div>
+                                    <div class = "col-md-6 col-lg-4 mb-4">
+                                        <div class = "aura-about-sc1-itm text-center d-flex flex-column align-items-center justify-content-between h-100">
+                                            <div class = "about-sc1-itm-ico">
+                                                <img src = "assets/images/pg-about/vision-icon.svg" alt = "">
+                                            </div>
+                                            <div class = "about-sc1-itm-title sc-title-md">
+                                                <h6 class = "text-uppercase text-gray34">vision</h6>
+                                            </div>
+                                            <p class = "text mt-lg-3 mt-2">Lorem ipsum doamet, consectetur adipiscing  </p>
+                                        </div>
+                                    </div>
+                                    <div class = "col-md-6 col-lg-4 mb-4">
+                                        <div class = "aura-about-sc1-itm text-center d-flex flex-column align-items-center justify-content-between h-100">
+                                            <div class = "about-sc1-itm-ico">
+                                                <img src = "assets/images/pg-about/values-icon.svg" alt = "">
+                                            </div>
+                                            <div class = "about-sc1-itm-title sc-title-md">
+                                                <h6 class = "text-uppercase text-gray34">values</h6>
+                                            </div>
+                                            <p class = "text mt-lg-3 mt-2">Lorem ipsum doamet, consectetur adipiscing  </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class = "aura-about-sc px-3">
+                        <div class = "container">
+                            <div class = "sc-title sc-title-md mb-4">
+                                <h2 class = "text-capitalize text-start">about aura</h2>
+                            </div>
+                            <div class = "aura-about-cnt">
+                                <p class = "text">Aura Products provides and supplies an extensive portfolio of Natural Exfoliation Materials sourced from around the World. Our customers incorporate them into a wide variety of products within industrial and cosmetic products.  These include hand soaps, as well as face, body and foot scrubs for exfoliation.</p>
+                                <p class = "text">Our customers are looking for natural, biodegradable and sustainable media primarily as an alternative to the increasingly unfashionable – Poly Bead. The team at Aura Products have a great deal of experience in the sourcing, grading and processing of these Natural Ingredients.</p>
+                            </div>
+                            <div class = "sc-title sc-title-md mb-4 mt-5">
+                                <h2 class = "text-capitalize text-start">Why Buy products from Aura?</h2>
+                            </div>
+                            <div class = "aura-about-cnt">
+                                <p class = "text">Aura is a Nepali brand of wet wipes, hand wash and beauty soap! Products that are 100% Natural. Aura products are safe to skin, 100 % Biodegradable, and can be used for everyday germ protections.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class = "aura-grid-display-2 px-3">
+                        <div class = "container">
+                            <div class = "aura-grid-display-2-cnt">
+                                <div class = "aura-grid-list d-flex align-items-center flex-wrap justify-content-between">
+                                    <div class = "aura-grid-itm d-flex align-items-center">
+                                        <div class = "aura-grid-itm-img">
+                                            <img src = "assets/images/pg-index/energy-icon.svg">
+                                        </div>
+                                        <span class = "aura-grid-itm-txt fw-4 fs-18 text-gray34 text-uppercase no-wrap">energy efficient</span>
+                                    </div>
+
+                                    <div class = "aura-grid-itm d-flex align-items-center">
+                                        <div class = "aura-grid-itm-img">
+                                            <img src = "assets/images/pg-index/smart-icon.svg">
+                                        </div>
+                                        <span class = "aura-grid-itm-txt fw-4 fs-18 text-gray34 text-uppercase no-wrap">smart technology</span>
+                                    </div>
+
+                                    <div class = "aura-grid-itm d-flex align-items-center">
+                                        <div class = "aura-grid-itm-img">
+                                            <img src = "assets/images/pg-index/durable-icon.svg">
+                                        </div>
+                                        <span class = "aura-grid-itm-txt fw-4 fs-18 text-gray34 text-uppercase no-wrap">durable</span>
+                                    </div>
+
+                                    <div class = "aura-grid-itm d-flex align-items-center">
+                                        <div class = "aura-grid-itm-img">
+                                            <img src = "assets/images/pg-index/freshness-icon.svg">
+                                        </div>
+                                        <span class = "aura-grid-itm-txt fw-4 fs-18 text-gray34 text-uppercase no-wrap">freshness</span>
+                                    </div>
+
+                                    <div class = "aura-grid-itm d-flex align-items-center">
+                                        <div class = "aura-grid-itm-img">
+                                            <img src = "assets/images/pg-index/warranty-icon.svg">
+                                        </div>
+                                        <span class = "aura-grid-itm-txt fw-4 fs-18 text-gray34 text-uppercase no-wrap">warranty</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+
+                <footer class = "ftr h-100 px-3 pt-4" id = "ftr">
+                    <div class = "container">
+                        <div class = "ftr-cnt text-center text-lg-start row">
+                            <div class = "col-md-6 col-xl-4 px-md-4">
+                                <div class = "ftr-itm mb-3 mb-lg-5">
+                                    <a href = "#" class = "navbar-brand mb-4">
+                                        <img src = "assets/images/site-logo.svg" alt = "aura site logo">
+                                    </a>
+                                    <p class = "text">Aura Products provides and supplies an extensive portfolio of Natural Exfoliation Materials sourced from around the World. Our customers incorporate them into a wide variety of products. </p>
+                                </div>
+                            </div>
+                            
+                            <div class = "col-md-6 col-xl-2 px-md-4">
+                                <div class = "ftr-itm mb-3 mb-lg-5">
+                                    <div class = "ftr-itm-title">
+                                        <h6>Quick Links</h6>
+                                    </div>
+                                    <ul class = "ftr-itm-links">
+                                        <li><a href = "#" class = "ftr-itm-link">home</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">about us</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">all categories</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">our blog</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class = "col-md-6 col-xl-2 px-md-4">
+                                <div class = "ftr-itm mb-3 mb-lg-5">
+                                    <div class = "ftr-itm-title">
+                                        <h6>Our Products</h6>
+                                    </div>
+                                    <ul class = "ftr-itm-links">
+                                        <li><a href = "#" class = "ftr-itm-link">refrigerator</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">rice cooker</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">vaccum cleaner</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">induction</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">air conditioner</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">Television</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">mixer grinder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class = "col-md-6 col-xl-4 px-md-4 mb-2">
+                                <div class = "ftr-itm">
+                                    <div class = "ftr-itm-title">
+                                        <h6>Get in Touch</h6>
+                                    </div>
+                                    <ul class = "ftr-itm-infos">
+                                        <li>Dillibazar, Kathmandu, Nepal</li>
+                                        <li>customercare@himgirinepal.com</li>
+                                        <li>980-1305532</li>
+                                    </ul>
+                                    <ul class = "ftr-itm-social-links d-flex justify-content-center justify-content-lg-start">
+                                        <li>
+                                            <a href = "#" class = "ftr-itm-social-link"><i class="lni lni-facebook-oval"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href = "#" class = "ftr-itm-social-link"><i class="lni lni-youtube"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href = "#" class = "ftr-itm-social-link"><i class="lni lni-linkedin-original"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href = "#" class = "ftr-itm-social-link"><i class="lni lni-twitter-filled"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href = "#" class = "ftr-itm-social-link"><i class="lni lni-instagram-original"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "ftr-cpy-right-text text-center">
+                            <p>All rights reserved. Copyright © 2022 </p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- scripts -->
+        <!-- jquery -->
+        <script src = "assets/js/jquery-3.6.1.js"></script>
+        <!-- bootstrap 5.2 -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+        <!-- owl carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- custom js -->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

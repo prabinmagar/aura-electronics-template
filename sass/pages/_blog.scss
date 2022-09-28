@@ -1,0 +1,209 @@
+.pg-blog{
+    .sc-title{
+        margin-bottom: 16px!important;
+        h2{
+            font-size: 34px;
+        }
+    }
+
+    .sc-search{
+        max-width: 212px;
+        @include border(1px, solid, #6a6666);
+        @include border-radius(4px);
+        .form-control{
+            @include border-none;
+        }
+        .input-group-text{
+            @include bgTrans;
+            @include border-none;
+        }
+    }
+
+    .aura-blog-li{
+        @include paddingY(60px);
+
+        @include breakpoint-down(sm){
+            @include paddingY(32px!important);
+        }
+
+        .aura-blog-itms{
+            margin-top: 55px!important;
+            margin-left: -12px!important;
+            margin-right: -12px!important;
+
+            @include breakpoint-down(lg){
+                margin-top: 32px!important;
+            }
+
+            @include breakpoint-down(md){
+                margin-top: 20px!important;
+            }
+
+            .aura-card{
+                @include border(1px, solid, $clr-black);
+                @include border-radius(8px);
+                @include padding(16px, 16px, 16px, 16px);
+                @include def_transition;
+
+                &-title{
+                    margin-top: 12px!important;
+                    h5{
+                        @include font-size(24px);
+                    }
+                }
+
+                &-img{
+                    img{
+                        width: 100%!important;
+                    }
+                }
+                &-body{
+                    @include flush--bottom;
+                    max-width: 100%!important;
+
+                    .aura-card-txt{
+                        @include font-size(16px);
+                        font-weight: 300;
+
+                        @include breakpoint-down(sm){
+                            font-size: 15px!important;
+                        }
+                        @include breakpoint-down(xs){
+                            font-size: 13px!important;
+                        }
+                    }
+                }
+
+                .aura-card-link{
+                    font-weight: 600;
+                    color: #043382;
+                    @include font-size(16px);
+                    font-family: $font-poppins;
+
+                    @include breakpoint-down(sm){
+                        font-size: 15px!important;
+                    }
+                    @include breakpoint-down(xs){
+                        font-size: 13px!important;
+                    }
+                }
+            }
+        }
+
+        .aura-paginate{
+            margin-top: 30px!important;
+        }
+    }
+
+    .aura-blog-si{
+        .aura-blog-si-cnt{
+            // blog details stylings
+            img{
+                margin-bottom: 32px!important;
+            }
+            h5, h6{
+                margin-bottom: 15px!important;
+                color: $clr-gray34;
+                font-family: $font-inter;
+                @include font-size(22px);
+                font-weight: 700;
+                @include breakpoint-down(md){
+                    font-size: 18px!important;
+                }
+
+                @include breakpoint-down(sm){
+                    font-size: 16px!important;
+                }
+
+                @include breakpoint-down(xs){
+                    font-size: 14px!important;
+                }
+            }
+            h1, h2, h3, h4{
+                font-family: $font-inter;
+                font-weight: 700;
+                @include font-size(36px);
+                line-height: 1.05;
+                @include marginY(15px!important);
+
+                @include breakpoint-down(md){
+                    font-size: 32px!important;
+                }
+
+                @include breakpoint-down(sm){
+                    font-size: 24px!important;
+                }
+
+                @include breakpoint-down(xs){
+                    font-size: 20px!important;
+                }
+            }
+            p{
+                @include font-size(18px);
+                letter-spacing: 0.03em;
+                color: $clr-gray34;
+                margin-bottom: 18px!important;
+                text-align: justify;
+
+                @include breakpoint-down(sm){
+                    font-size: 15px!important;
+                }
+                @include breakpoint-down(xs){
+                    font-size: 13px!important;
+                }
+            }
+            table{
+                @include marginY(15px!important);
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 0 12px;
+                tr{
+                    td{
+                        &:nth-child(2){
+                            text-align: right;
+                        }
+                        @include border(0.5px, solid, #9f9d9d, bottom);
+
+                        @include paddingY(7px!important);
+                        margin-bottom: 14px!important;
+                        font-weight: 500;
+                        color: #655f5f;
+                        @include font-size(20px);
+
+                        @include breakpoint-down(md){
+                            font-size: 18px!important;
+                        }
+
+                        @include breakpoint-down(sm){
+                            font-size: 16px!important;
+                        }
+
+                        @include breakpoint-down(xs){
+                            font-size: 14px!important;
+                        }
+                    }
+                }
+            }
+            ul{
+                @include marginY(15px!important);
+                list-style-type: circle;
+                margin-left: 22px!important;
+                li{
+                    @include font-size(18px);
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                    color: $clr-eclipse;
+                    margin-bottom: 8px!important;
+
+                    @include breakpoint-down(sm){
+                        font-size: 15px!important;
+                    }
+                    @include breakpoint-down(xs){
+                        font-size: 13px!important;
+                    }
+                }
+            }
+            // end of blog details stylings
+        }
+    }
+}

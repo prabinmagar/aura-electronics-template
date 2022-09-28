@@ -1,0 +1,329 @@
+.pg-prod{
+    .sc-title{
+        margin-bottom: 16px!important;
+        h2{
+            font-size: 34px;
+        }
+    }
+
+    .sc-search{
+        max-width: 212px;
+        @include border(1px, solid, #6a6666);
+        @include border-radius(4px);
+        .form-control{
+            @include border-none;
+        }
+        .input-group-text{
+            @include bgTrans;
+            @include border-none;
+        }
+    }
+
+    .aura-prod-li{
+        @include paddingY(60px);
+
+        @include breakpoint-down(sm){
+            @include paddingY(32px!important);
+        }
+
+        .aura-prod-li-cnt{
+            .prod-filter-button-group{
+                margin-top: 20px!important;
+                button{
+                    @include border(1px, solid, $clr-gray34);
+                    @include padding(4px, 24px, 4px, 24px);
+                    @include font-size(18px, 30px, 0.5px);
+                    font-weight: 300;
+                    text-transform: capitalize;
+                    color: $clr-gray34;
+                    @include bgTrans;
+                    @include border-radius(20px);
+                    margin-right: 16px!important;
+                    margin-bottom: 14px!important;
+                    @include def_transition;
+
+                    @include breakpoint-down(lg){
+                        margin-right: 8px!important;
+                        @include font-size(16px);
+                        margin-bottom: 12px!important;
+                        @include padding(4px, 20px, 4px, 20px);
+                    }
+
+                    @include breakpoint-down(sm){
+                        margin-right: 6px!important;
+                        margin-bottom: 8px!important;
+                        @include font-size(14px);
+                        @include padding(4px, 16px, 4px, 16px);
+                    }
+
+                    &:hover{
+                        background-color: $clr-gray!important;
+                        color: $clr-white;
+                    }
+                }
+
+                .filter-btn-active{
+                    background-color: $clr-gray!important;
+                    color: $clr-white;
+                }
+            }
+
+            .aura-prod-itms{
+                margin-top: 55px!important;
+                margin-left: -24px!important;
+                margin-right: -24px!important;
+
+                @include breakpoint-down(lg){
+                    margin-top: 32px!important;
+                }
+
+                @include breakpoint-down(md){
+                    margin-top: 20px!important;
+                }
+
+                .aura-card{
+                    @include border(1px, solid, $clr-black);
+                    @include border-radius(8px);
+                    @include padding(21px, 38px, 21px, 38px);
+                    @include def_transition;
+
+                    &-title{
+                        h5{
+                            @include font-size(36px);
+                            @include breakpoint-down(lg){
+                                @include font-size(24px);
+                            }
+                        }
+                    }
+
+                    &-img{
+                        min-height: 360px;
+                        img{
+                            width: auto!important;
+                        }
+                    }
+                    &-body{
+                        @include flush--bottom;
+                        @include flush;
+                        max-width: 100%!important;
+
+                        .aura-card-txt{
+                            @include font-size(14px);
+                            font-weight: 300;
+                        }
+                    }
+
+                    &:hover{
+                        background-color: rgba(0, 0, 0, 0.03);
+                    }
+
+                    .aura-card-link{
+                        &:hover{
+                            color: $clr-white!important;
+                        }
+                    }
+
+                    .btn-trans-o{
+                        margin-top: 8px!important;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .aura-paginate{
+                margin-top: 30px!important;
+            }
+        }
+    }
+
+    .aura-prod-si{
+        .aura-prod-si-cnt{
+
+            // details stylings
+            h5, h6{
+                color: $clr-gray34;
+                font-family: $font-inter;
+                @include font-size(20px);
+                font-weight: 500;
+                @include breakpoint-down(md){
+                    font-size: 18px!important;
+                }
+
+                @include breakpoint-down(sm){
+                    font-size: 16px!important;
+                }
+
+                @include breakpoint-down(xs){
+                    font-size: 14px!important;
+                }
+            }
+            h1, h2, h3, h4{
+                font-family: $font-inter;
+                font-weight: 600;
+                @include font-size(48px);
+                line-height: 1.05;
+                @include marginY(15px!important);
+
+                @include breakpoint-down(md){
+                    font-size: 32px!important;
+                }
+
+                @include breakpoint-down(sm){
+                    font-size: 24px!important;
+                }
+
+                @include breakpoint-down(xs){
+                    font-size: 20px!important;
+                }
+            }
+            p{
+                @include font-size(20px);
+                letter-spacing: 0.03em;
+                color: $clr-gray34;
+                margin-bottom: 18px!important;
+
+                @include breakpoint-down(sm){
+                    font-size: 15px!important;
+                }
+                @include breakpoint-down(xs){
+                    font-size: 13px!important;
+                }
+            }
+            .info-badge{
+                @include flexbox;
+                align-items: center;
+                @include hard--left;
+                li{
+                    @include border(1px, solid, $clr-gray34);
+                    color: $clr-gray34;
+                    @include padding(4px, 24px, 4px, 24px);
+                    margin-right: 20px!important;
+                    @include border-radius(20px);
+
+                    @include breakpoint-down(sm){
+                        font-size: 16px!important;
+                        margin-right: 10px!important;
+                    }
+
+                    @include breakpoint-down(xs){
+                        @include padding(4px, 18px, 4px, 18px);
+                        font-size: 14px!important;
+                    }
+                }
+            }
+
+            table{
+                width: 100%;
+                border-collapse: separate;
+                border-spacing: 0 12px;
+                tr{
+                    td{
+                        &:nth-child(2){
+                            text-align: right;
+                        }
+                        @include border(0.5px, solid, #9f9d9d, bottom);
+
+                        @include paddingY(7px!important);
+                        margin-bottom: 14px!important;
+                        font-weight: 500;
+                        color: #655f5f;
+                        @include font-size(20px);
+
+                        @include breakpoint-down(md){
+                            font-size: 18px!important;
+                        }
+
+                        @include breakpoint-down(sm){
+                            font-size: 16px!important;
+                        }
+
+                        @include breakpoint-down(xs){
+                            font-size: 14px!important;
+                        }
+                    }
+                }
+            }
+            // end of details stylings
+
+            .aura-breadcrumb{
+                margin-top: 32px!important;
+            }
+
+            .aura-prod-si-blk1{
+                @include paddingY(55px);
+                @include breakpoint-down(sm){
+                    @include paddingY(32px!important);
+                }
+
+                .aura-prod-preview{
+                    .aura-prod-preview-img{
+                        height: 380px;
+                        // @include push--auto;
+                        @include flex-center;
+                        overflow: hidden;
+                        margin-bottom: 14px!important;
+
+                        @include breakpoint-down(xs){
+                            height: 320px;
+                        }
+
+                        img{
+                            width: auto;
+                            height: 100%;
+
+                            @include breakpoint-down(xs){
+                                height: auto;
+                            }
+                        }
+                    }
+                    .aura-prod-preview-thumbs{
+                        .aura-prod-preview-thumb-itm{
+                            @include border(1px, solid, $clr-gray34);
+                            margin-right: 26px!important;
+                            max-width: 145px;
+                            width: 100%;
+                            @include padding(10px, 10px, 10px, 10px);
+                            cursor: pointer;
+
+                            img{
+                                @include def_transition;
+                            }
+
+                            &:hover{
+                                img{
+                                    transform: scale(0.95);
+                                }
+                            }
+
+                            &:last-child{
+                                @include flush--right;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .aura-prod-si-blk2{
+                h6{
+                    font-weight: 700;
+                    @include font-size(24px);
+                    color: $clr-gray34;
+                    margin-bottom: 24px!important;
+                }
+            }
+
+            .aura-prod-si-blk3{
+                padding-top: 55px!important;
+                @include breakpoint-down(sm){
+                    @include paddingY(32px!important);
+                }
+                h6{
+                    font-weight: 700;
+                    @include font-size(24px);
+                    color: $clr-gray34;
+                    margin-bottom: 24px!important;
+                }
+            }
+        }
+    }
+}

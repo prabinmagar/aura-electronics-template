@@ -1,0 +1,116 @@
+
+// owl dots customization
+.owl-carousel{
+    @include position(relative);
+
+    .owl-dots{
+        @include position(absolute, null, null, 40px, 50%);
+        transform: translateX(-50%);
+
+        .owl-dot{
+            span{
+                width: 13px;
+                height: 13px;
+                @include bgColor($clr-white);
+                @include marginX(3.5px!important);
+
+                &:hover{
+                    @include bgColor(white(0.8));
+                }
+            }
+
+            &.active{
+                span{
+                    @include bgColor($clr-orange);
+                }
+            }
+        }
+    }
+}
+
+.feat-offers-slides{
+    position: relative;
+}
+
+// owl navs customization
+.owl-nav{
+    .owl-prev, .owl-next{
+        transform: translateY(-50%);
+
+        img{
+            width: 20px;
+            opacity: 0.5;
+            @include def_transition;
+        }
+
+        &:hover{
+            @include bgTrans;
+            img{
+                opacity: 1;
+            }
+        }
+    }
+    .owl-prev{
+        @include position(absolute, 50%, null, null, 0, 10);
+    }
+    .owl-next{
+        @include position(absolute, 50%, 0, null, null, 10);
+    }
+}
+
+// pagination bootstrap
+.aura-paginate{
+    .pagination{
+        .page-link{
+            @include bgColor($clr-eclipse);
+            @include border(1px, solid, $clr-eclipse);
+            color: $clr-white;
+            margin: 0 2.4px!important;
+            @include flex-center;
+
+            &.pg-link-num{
+                @include box(38px);
+                @include breakpoint-down(md){
+                    @include box(32px);
+                }
+                @include breakpoint-down(sm){
+                    @include font-size(14px);
+                }
+            }
+            &.pg-link-val{
+                @include border-radius(0px);
+                @include breakpoint-down(md){
+                    height: 32px;
+                }
+                @include breakpoint-down(sm){
+                    @include font-size(14px);
+                }
+            }
+
+            &:hover{
+                @include bgTrans;
+                color: $clr-eclipse;
+            }
+        }
+        .pg-link-active{
+            @include bgTrans;
+            color: $clr-eclipse;
+        }
+    }
+}
+
+// breadcrumb bootstrap
+.aura-breadcrumb{
+    .breadcrumb-item{
+        @include breakpoint-down(lg){
+            @include font-size(18px);
+        }
+
+        @include breakpoint-down(md){
+            @include font-size(16px);
+        }
+        @include breakpoint-down(xs){
+            @include font-size(14px);
+        }
+    }
+}

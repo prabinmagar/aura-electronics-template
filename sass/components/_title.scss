@@ -1,0 +1,70 @@
+.sc-title{
+    h1, h2, h3, h4, h5, h6{
+        font-weight: 700;
+    }
+
+    &-lg{
+        h1, h2, h3, h4, h5, h6{
+            font-family: $font-noto-sans;
+            @include font-size(42px, 57.2px);
+        }
+        @include breakpoint-down(lg){
+            h1, h2, h3, h4, h5, h6{
+                font-size: 30px!important;
+            }
+        }
+        @include breakpoint-down(md){
+            h1, h2, h3, h4, h5, h6{
+                font-size: 26px!important;
+            }
+        }
+        @include breakpoint-down(sm){
+            h1, h2, h3, h4, h5, h6{
+                font-size: 24px!important;
+            }
+        }
+        @include breakpoint-down(xs){
+            h1, h2, h3, h4, h5, h6{
+                font-size: 22px!important;
+            }
+        }
+    }
+
+    &-md{
+        h1, h2, h3, h4, h5, h6{
+            font-family: $font-noto-sans;
+            @include font-size(25px, 27.5px);
+            color: $clr-gray34;
+        }
+
+        @include breakpoint-down(sm){
+            h1, h2, h3, h4, h5, h6{
+                font-size: 20px!important;
+            }
+        }
+        @include breakpoint-down(xs){
+            h1, h2, h3, h4, h5, h6{
+                font-size: 18px!important;
+            }
+        }
+    }
+
+    &-sm{
+        h1, h2, h3, h4, h5, h6{
+            font-family: $font-inter;
+            @include font-size(20px, 22px);
+            color: $clr-black;
+        }
+
+        @include breakpoint-down(sm){
+            h1, h2, h3, h4, h5, h6{
+                font-size: 19px!important;
+            }
+        }
+        @include breakpoint-down(xs){
+            h1, h2, h3, h4, h5, h6{
+                font-size: 16px!important;
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+.ftr{
+    overflow-x: hidden;
+    .ftr-cnt{
+        @include padding(55px, 0, 10px, 0);
+
+        .ftr-itm{
+            &:nth-child(1){
+                .navbar-brand{
+                    display: inline-block;
+                    width: 110px;
+                    @include breakpoint-down(sm){
+                        width: 90px;
+                    }
+                    @include breakpoint-down(xs){
+                        width: 70px;
+                    }
+                }
+                p{
+                    &.text{
+                        @include font-size(18px, 29px);
+                    }
+                }
+            }
+        }
+    }
+
+    .ftr-itm-title{
+        h2, h3, h4, h5, h6{
+            font-family: $font-noto-sans;
+            @include font-size(22px, 24px);
+            color: $clr-gray34;
+            margin-bottom: 30px!important;
+            font-weight: 700;
+        }
+
+        @include breakpoint-down(sm){
+            h2, h3, h4, h5, h6{
+                font-size: 19px!important;
+            }
+        }
+        @include breakpoint-down(xs){
+            h2, h3, h4, h5, h6{
+                font-size: 16px!important;
+            }
+        }
+    }
+
+    .ftr-itm-links{
+        li{
+            margin-bottom: 13px!important;
+            @include breakpoint-down(md){
+                margin-bottom: 10px!important;
+            }
+            @include breakpoint-down(sm){
+                margin-bottom: 9px!important;
+            }
+            .ftr-itm-link{
+                @include font-size(19px, 24px);
+                font-weight: 400;
+                color: #7b7d89;
+                text-transform: capitalize;
+
+                @include breakpoint-down(md){
+                    @include font-size(18px, 22px);
+                }
+
+                @include breakpoint-down(sm){
+                    @include font-size(16px, 20px);
+                }
+
+                @include breakpoint-down(xs){
+                    @include font-size(14px, 18px);
+                }
+
+                &:hover{
+                    color: $clr-deep-skyblue;
+                }
+            }
+        }
+    }
+
+    .ftr-itm-infos{
+        li{
+            @include font-size(19px, 24px);
+            font-weight: 400;
+            color: #7b7d89;
+            margin-bottom: 13px!important;
+
+            @include breakpoint-down(md){
+                @include font-size(18px, 22px);
+                margin-bottom: 10px!important;
+            }
+
+            @include breakpoint-down(sm){
+                @include font-size(16px, 20px);
+                margin-bottom: 9px!important;
+            }
+
+            @include breakpoint-down(xs){
+                @include font-size(14px, 18px);
+            }
+        }
+    }
+    .ftr-itm-social-links{
+        margin-top: 61px!important;
+
+        @include breakpoint-down(md){
+            margin-top: 40px!important;
+        }
+        @include breakpoint-down(sm){
+            margin-top: 30px!important;
+        }
+        li{
+            @include marginX(16px!important);
+            @include font-size(26px);
+            color: #8F8C8C;
+            @include def_transition;
+
+            &:hover{
+                color: #5a5a5a; 
+            }
+
+            &:first-child{
+                @include flush--left;
+            }
+
+            @include breakpoint-down(md){
+                font-size: 24px;
+            }
+            @include breakpoint-down(sm){
+                font-size: 22px;
+            }
+            @include breakpoint-down(xs){
+                font-size: 18px;
+            }
+        }
+    }
+
+    .ftr-cpy-right-text{
+        @include border(2px, solid, #f3f3f3, top);
+        @include paddingY(18px!important);
+
+        p{
+            color: #7B7D89;
+            @include font-size(16px);
+
+            @include breakpoint-down(xs){
+                font-size: 14px;
+            }
+        }
+    }
+}

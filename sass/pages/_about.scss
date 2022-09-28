@@ -1,0 +1,37 @@
+
+.pg-about{
+    .aura-about-sc1{
+        @include marginY(90px!important);
+        @include breakpoint-down(lg){
+            @include marginY(50px!important);
+        }
+        .aura-about-sc1-itms{
+            > div{
+                @include border(1px, solid, $clr-gray34, right);
+                &:last-child{
+                    @include border-none;
+                }
+            }
+        }
+        .aura-about-sc1-itm{
+            .about-sc1-itm-ico{
+                width: 65px;
+            }
+
+            .about-sc1-itm-title.sc-title-md{
+                h6{
+                    font-family: $font-noto-sans;
+                    @include font-size(32px, 35px);
+                }
+                @include marginY(18px!important);
+            }
+
+            @include breakpoint-up(lg){
+                @include paddingX(30px!important);
+            }
+            @include breakpoint-up(xxl){
+                @include paddingX(50px!important);
+            }
+        }
+    }
+}

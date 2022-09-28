@@ -1,0 +1,179 @@
+.aura-catg-sc{
+    .aura-catg-cnt{
+        .aura-catg-list{
+            .aura-catg-itm{
+                width: 150px;
+
+                @include breakpoint-down(sm){
+                    width: 100px;
+                }
+                .aura-catg-itm-ico{
+                    @include box(85px);
+                    @include border(4px, solid, $clr-gray85);
+                    @include border-radius(50%);
+                    @include flex-center;
+                    overflow: hidden;
+                    @include def_transition;
+
+                    img{
+                        max-width: 46px;
+                        @include def_transition;
+                    }
+
+                    @include breakpoint-down(sm){
+                        @include box(60px);
+                        @include border(3px, solid, $clr-gray85);
+
+                        img{
+                            max-width: 30px;
+                        }
+                    }
+                }
+
+                &:hover{
+                    .aura-catg-itm-ico{
+                        border-color: $clr-deep-skyblue!important;
+
+                        img{
+                            transform: scale(0.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.aura-feat-offers-sc{
+    @include marginY(100px!important);
+    @include breakpoint-down(md){
+        @include marginY(50px!important);
+    }
+    .aura-card-full{
+        .aura-card-full-r{
+            @include breakpoint-up(lg){
+                padding-left: 30px!important;
+            }
+
+            @include breakpoint-up(xxl){
+                padding-left: 66px!important;
+            }
+        }
+    }
+}
+
+.aura-sc-blk-1{
+    min-height: 478px;
+    background: url('../../assets/images/pg-index/aura-block-sec-img-1.png') center/cover no-repeat;
+
+    .aura-sc-blk-cnt{
+        .btn-primary{
+            @include font-size(20px);
+        }
+
+        .aura-sc-blk-cnt-r{
+            @include align-self(flex-end);
+            img{
+                width: 70%;
+                margin-left: auto!important;
+            }
+        }
+    }
+}
+
+.aura-grid-display-1{
+    @include marginY(100px!important);
+    @include breakpoint-down(md){
+        @include marginY(50px!important);
+    }
+    .aura-grid-display-1-cnt{
+        display: grid;
+        gap: 16px;
+
+        @include breakpoint-up(md){
+            grid-template-columns: repeat(2, 1fr)
+        }
+
+        @include breakpoint-up(lg){
+            gap: 29px;
+        }
+    }
+
+    .aura-grid-display-1-itm{
+        @include def_transition;
+        &:hover{
+            transform: scale(0.95);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+
+    .aura-grid-r1{
+        display: grid;
+        gap: 16px;
+
+        @include breakpoint-up(xs){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint-up(lg){
+            gap: 29px;
+        }
+    }
+}
+
+.aura-about-sc{
+    .text{
+        @include breakpoint-down(sm){
+            line-height: 26px;
+        }
+    }
+}
+
+.aura-grid-display-2{
+    margin-top: 100px!important;
+    @include breakpoint-down(md){
+        margin-top: 50px!important;
+    }
+
+    .aura-grid-display-2-cnt{
+        .aura-grid-list{
+            @include paddingY(30px!important);
+            @include border(2px, solid, #f3f3f3, top);
+            @include border(2px, solid, #f3f3f3, bottom);
+            .aura-grid-itm{
+                @include marginX(33.5px!important);
+                @include paddingY(15px!important);
+
+                @include breakpoint-down(md){
+                    @include marginX(22px!important);
+                    @include paddingY(11px!important);
+                }
+                @include breakpoint-down(sm){
+                    @include marginX(16px!important);
+                    @include paddingY(8px!important);
+                }
+
+                .aura-grid-itm-img{
+                    width: 44.5px;
+                    margin-right: 10px!important;
+
+                    @include breakpoint-down(md){
+                        width: 30px;
+                    }
+                    @include breakpoint-down(sm){
+                        width: 20px;
+                    }
+                }
+                .aura-grid-itm-txt{
+                    @include breakpoint-down(md){
+                        @include font-size(16px);
+                    }
+                    @include breakpoint-down(sm){
+                        @include font-size(14px);
+                    }
+                }
+                
+            }
+        }
+    }
+}

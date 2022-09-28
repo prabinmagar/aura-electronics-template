@@ -1,0 +1,228 @@
+.aura-con-sc{
+    margin-top: 27px!important;
+    > .container{
+        box-shadow: 1px 4px 4px 1px #0000004D;
+        @include border-radius(8px);
+        @include padding(45px, 23px, 45px, 23px);
+
+        @include breakpoint-down(sm){
+            @include padding(45px, 12px, 45px, 12px);
+        }
+    }
+
+    .aura-con-sc-title{
+        @include font-size(48px);
+        margin-bottom: 40px!important;
+    }
+
+    .aura-con-sc-l{
+        @include bgColor($clr-blue);
+        @include border-radius(6px);
+        min-height: 640px;
+        overflow: hidden;
+
+        @include breakpoint-down(md){
+            min-height: 580px;
+        }
+
+        @include breakpoint-down(sm){
+            min-height: 540px;
+        }
+
+        @include breakpoint-down(xs){
+            min-height: 400px;
+        }
+
+        .con-shape-1{
+            @include circle(240px, 240px, $clr-deep-skyblue);
+            @include position(absolute, null, 71px, 71px, null);
+            z-index: 10;
+
+            @include breakpoint-down(lg){
+                width: 210px;
+                height: 210px;
+            }
+
+            @include breakpoint-down(md){
+                width: 150px;
+                height: 150px;
+            }
+
+            @include breakpoint-down(sm){
+                display: none;
+            }
+        }
+        .con-shape-2{
+            @include circle(600px, 587px, $clr-light-blue);
+            @include position(absolute, null, -50%, -50%, null);
+
+            @include breakpoint-down(md){
+                width: 400px;
+                height: 400px;
+                @include position(absolute, null, -35%, -35%, null);
+            }
+
+            @include breakpoint-down(sm){
+                @include position(absolute, null, -40%, -40%, null);
+                display: none;
+            }
+        }
+
+        .con-sc-infos{
+            .con-infos-list{
+                margin-top: 60px!important;
+                .con-info-itm{
+                    &-icon{
+                        margin-right: 10px!important;
+                        @include font-size(24px);
+
+                        @include breakpoint-down(md){
+                            @include font-size(20px);
+                        }
+
+                        @include breakpoint-down(sm){
+                            @include font-size(18px);
+                        }
+
+                        @include breakpoint-down(xs){
+                            @include font-size(16px);
+                        }
+                    }
+
+                    &-txt{
+                        font-weight: 400;
+                        @include font-size(19px);
+
+                        @include breakpoint-down(md){
+                            @include font-size(18px);
+                        }
+
+                        @include breakpoint-down(sm){
+                            @include font-size(16px);
+                        }
+
+                        @include breakpoint-down(xs){
+                            @include font-size(14px);
+                        }
+                    }
+                }
+            }
+
+            .con-social-list{
+                position: absolute;
+                bottom: 100px;
+                z-index: 20;
+
+                .con-social-itm{
+                    @include circle(41px, 41px, $clr-deep-skyblue);
+                    @include flex-center;
+                    margin-right: 7px!important;
+                    @include font-size(24px);
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                }
+
+                @include breakpoint-down(sm){
+                    bottom: 60px;
+                }
+
+                @include breakpoint-down(xs){
+                    bottom: 40px;
+                }
+            }
+        }
+    }
+
+    .aura-contact-sc-r{
+        .con-sc-form{
+            .form-label{
+                font-weight: 500;
+                @include font-size(20px, 30px);
+                text-transform: capitalize;
+                color: $clr-gray34;
+                margin-bottom: 14px!important;
+
+                @include breakpoint-down(md){
+                    @include font-size(18px);
+                    margin-bottom: 12px!important;
+                }
+
+                @include breakpoint-down(sm){
+                    @include font-size(16px);
+                    margin-bottom: 10px!important;
+                }
+
+                @include breakpoint-down(xs){
+                    @include font-size(14px);
+                    margin-bottom: 8px!important;
+                }
+            }
+            .form-control{
+                @include font-size(20px, 30px);
+                @include border(1px, solid, $clr-gray34);
+                min-height: 52px;
+
+                @include breakpoint-down(md){
+                    @include font-size(18px);
+                    @include input-placeholder{
+                        font-size: 18px!important;
+                    }
+                    min-height: 48px;
+                }
+
+                @include breakpoint-down(sm){
+                    @include font-size(16px);
+                    @include input-placeholder{
+                        font-size: 16px!important;
+                    }
+                    min-height: 46px;
+                }
+
+                @include breakpoint-down(xs){
+                    @include font-size(14px);
+                    @include input-placeholder{
+                        font-size: 14px!important;
+                    }
+                    min-height: 42px;
+                }
+            }
+
+            .form-elem{
+                margin-bottom: 20px!important;
+
+                @include breakpoint-down(md){
+                    margin-bottom: 16px!important;
+                }
+                @include breakpoint-down(sm){
+                    margin-bottom: 12px!important;
+                }
+            }
+
+            textarea{
+                height: 174px;
+            }
+
+            .btn-primary{
+                @include breakpoint-down(md){
+                    @include font-size(18px);
+                }
+
+                @include breakpoint-down(sm){
+                    @include font-size(16px);
+                    width: 100%;
+                }
+
+                @include breakpoint-down(xs){
+                    @include font-size(14px);
+                }
+
+                &:hover{
+                    @include bgColor($clr-blue);
+                }
+            }
+        }
+    }
+}
+
+.aura-map-sc{
+    margin-top: 80px!important;
+}

@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    @include flush;
+    @include hard;
+}
+html, body{
+    height: 100%;
+    @include antialias;
+}
+ul, ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: unset;
+    @include def_transition;
+    &:focus, &:hover{
+        color: unset;
+    }
+}
+img, picture, video, canvas, svg{
+    max-width: 100%;
+    display: block;
+}
+img{
+    width: 100%;
+}
+input, button, textarea, select{
+    font: inherit;
+    outline: 0;
+}
+h1, h2, h3, h4, h5, h6, p{
+    overflow-wrap: break-word;
+}
+textarea{
+    resize: none;
+}
+
+// bootstrap resets
+.btn:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.container{
+    @include hard--right;
+    @include hard--left;
+    @include push--auto;
+}
+ul{
+    @include flush;
+    @include hard;
+}
+.form-control{
+    &:focus{
+        box-shadow: none;
+    }
+}
+.btn{
+    @include border-none;
+}

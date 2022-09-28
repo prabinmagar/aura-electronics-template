@@ -1,0 +1,144 @@
+
+// normal card stylings
+.aura-card{
+    margin: 10px;
+    &-img{
+        @include flex-center;
+        img{
+            @include box(180px!important, auto!important);
+        }
+    }
+
+    &-body{
+        @include marginY(16px!important);
+        max-width: 380px;
+        @include push--auto;
+
+        .aura-card-title{
+            h2, h3, h4, h5, h6{
+                font-weight: 700;
+                @include font-size(18px, 19.8px);
+                color: $clr-gray34;
+                margin-bottom: 12px!important;
+            }
+
+            @include breakpoint-down(sm){
+                h2, h3, h4, h5, h6{
+                    font-size: 16px!important;
+                }
+            }
+
+            @include breakpoint-down(xs){
+                h2, h3, h4, h5, h6{
+                    font-size: 15px!important;
+                }
+            }
+        }
+
+        .aura-card-txt{
+            font-weight: 400;
+            @include font-size(16px, 24px);
+            color: #23263B99;
+            margin-bottom: 12px!important;
+
+            @include breakpoint-down(sm){
+                @include font-size(14px);
+            }
+
+            @include breakpoint-down(xs){
+                @include font-size(13px);
+            }
+        }
+
+        .aura-card-link{
+            font-family: $font-inter;
+            color: $clr-gray34;
+            @include font-size(15px);
+            font-weight: 500;
+            text-transform: capitalize;
+
+            @include breakpoint-down(sm){
+                @include font-size(14px);
+            }
+
+            @include breakpoint-down(xs){
+                @include font-size(13px);
+            }
+
+            .aura-card-link-ico{
+                @include font-size(12px);
+                margin-left: 10px!important;
+                @include def_transition;
+
+                @include breakpoint-down(sm){
+                    @include font-size(10px);
+                }
+
+                @include breakpoint-down(xs){
+                    @include font-size(8px);
+                }
+            }
+
+            &:hover{
+                color: $clr-deep-skyblue;
+                .aura-card-link-ico{
+                    margin-left: 5px!important;
+                }
+            }
+        }
+    }
+    
+}
+
+// full width card stylings
+.aura-card-full{
+    .aura-card-full-title{
+        h1, h2, h3, h4, h5, h6{
+            font-family: $font-noto-sans;
+            font-weight: 700;
+            @include font-size(35px, 47.67px);
+            color: $clr-gray34;
+            margin-bottom: 20px!important;
+        }
+
+        @include breakpoint-down(lg){
+            h1, h2, h3, h4, h5, h6{
+                @include font-size(28px, 38px);
+                margin-bottom: 18px!important;
+            }
+        }
+
+        @include breakpoint-down(md){
+            h1, h2, h3, h4, h5, h6{
+                font-size: 25px!important;
+                margin-bottom: 16px!important;
+            }
+        }
+
+        @include breakpoint-down(sm){
+            h1, h2, h3, h4, h5, h6{
+                font-size: 24px!important;
+                margin-bottom: 14px!important;
+            }
+        }
+        @include breakpoint-down(xs){
+            h1, h2, h3, h4, h5, h6{
+                font-size: 18px!important;
+            }
+        }
+    }
+    .aura-card-full-txt{
+        font-weight: 400;
+        @include font-size(20px, 30px);
+        color: #23263B99;
+        margin-bottom: 24px!important;
+
+        @include breakpoint-down(sm){
+            @include font-size(16px);
+        }
+
+        @include breakpoint-down(xs){
+            @include font-size(14px);
+        }
+    }
+}
