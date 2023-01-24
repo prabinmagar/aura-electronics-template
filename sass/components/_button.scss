@@ -25,7 +25,7 @@
 .btn-primary{
     @extend %btn-shared;
     background-color: $clr-deep-skyblue;
-    @include border(1px, solid, $clr-deep-skyblue!important);
+    @include border(1px, solid, $clr-blue!important);
     &:hover{
         @include bgTrans;
         border-color: $clr-white!important;

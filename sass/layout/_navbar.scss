@@ -12,6 +12,7 @@
 
     .tp-nav-blk-1{
         height: 96px;
+        // margin-right: 0!important;
         @include border(0.5px, solid, rgba(0, 0, 0, 0.1), bottom);
 
         @include breakpoint-up(lg){
@@ -45,13 +46,14 @@
         }
 
         .tp-cat-dropdown{
+            width: 100%;
             .dropdown-menu{
                 .dropdown-item{
                     @include paddingY(10px!important);
 
-                    &:hover{
-                        @include bgColor(rgba(0, 0, 0, 0.03));
-                    }
+                    // &:hover{
+                    //     @include bgColor(rgba(0, 0, 0, 0.03));
+                    // }
 
                     @include breakpoint-down(sm){
                         @include font-size(15px);
@@ -112,6 +114,19 @@
                     }
                 }
             }
+        }
+    }
+
+    .tp-nav-modal{
+        @include position(fixed, 0, 0, 0, 0, 998);
+        @include bgColor(rgba(0, 0, 0, 0.4));
+        opacity: 0;
+        visibility: hidden;
+        @include def_transition;
+
+        &.show-top-nav-modal{
+            opacity: 1;
+            visibility: visible
         }
     }
 
@@ -223,7 +238,44 @@
     }
 }
 
+.dropdown .dropdown-toggle::after{
+    color: $clr-deep-skyblue;
+    font-size: 18px;
+}
+
 // utilities classes related with JS
 .show-sidebar-nav{
     transform: translateX(0)!important;
+}
+
+
+// dropdown customer
+.tp-cat-dropdown-btn{
+    @include posRelative;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+
+    &:hover{
+        .tp-cat-dropdown-ul{
+            display: block;
+        }
+    }
+}
+
+.tp-cat-dropdown-ul{
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 20px;
+    @include bgColor($clr-white);
+    border-radius: 9px;
+    border: 1px solid rgba(0, 0, 0, 0.03)!important;
+    display: none;
+
+    li{
+        margin: 12px 0!important;
+    }
 }

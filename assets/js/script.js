@@ -2,10 +2,20 @@ $(document).ready(function(){
     // sidebar toggle
     $('#tp-sidebar-show-btn').click(function(){
         $(".tp-nav-blk-3").addClass('show-sidebar-nav');
+        $(".tp-nav-modal").addClass('show-top-nav-modal');
     });
+
     $('#tp-sidebar-hide-btn').click(function(){
         $(".tp-nav-blk-3").removeClass('show-sidebar-nav');
+        $(".tp-nav-modal").removeClass('show-top-nav-modal');
     })
+
+    $(window).click(function(e){
+        if($(e.target).hasClass('show-top-nav-modal')){
+            $(".tp-nav-blk-3").removeClass('show-sidebar-nav');
+            $(".tp-nav-modal").removeClass('show-top-nav-modal');
+        }
+    });
 
     // animation and transition stopper on window resize
     let resizeTimer;

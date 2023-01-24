@@ -202,6 +202,7 @@
             }
 
             .btn-primary{
+                border-color: $clr-deep-skyblue;
                 @include breakpoint-down(md){
                     @include font-size(18px);
                 }
@@ -217,6 +218,7 @@
 
                 &:hover{
                     @include bgColor($clr-blue);
+                    border-color: $clr-blue!important;
                 }
             }
         }

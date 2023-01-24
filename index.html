@@ -23,7 +23,7 @@
             <div class = "pg-wrapper h-100">
                 <nav class = "tp-navbar px-3">
                     <div class = "container">
-                        <div class = "tp-navbar-wrapper d-lg-flex justify-content-lg-between align-items-lg-center justify-content-xl-end">
+                        <div class = "tp-navbar-wrapper d-lg-flex justify-content-lg-start align-items-lg-center justify-content-xl-end">
                             <!-- brand and toggler -->
                             <div class = "tp-nav-blk-1 d-flex justify-content-between me-auto">
                                 <a href = "index.html" class = "navbar-brand d-flex align-items-center">
@@ -34,25 +34,21 @@
                                 </button>
                             </div>
                             <!-- end of brand and toggler -->
-                            <div class = "tp-nav-blk-2 d-flex align-items-center justify-content-between">
-                                <div class = "tp-cat-dropdown dropdown">
-                                    <button class = "btn dropdown-toggle text-uppercase text-gray34 fw-5" type = "button" data-bs-toggle = "dropdown" aria-expanded="false">
-                                        <span class = "tp-cat-btn-txt d-none d-sm-inline-block me-2">all categories</span>
-                                        <span class = "tp-cat-btn-icon d-sm-none">
-                                            <i class="lni lni-grid-alt"></i>
-                                        </span>
-                                    </button>
+                            <div class = "tp-nav-blk-2 d-flex align-items-center justify-content-start me-auto">
+                                <div class = "tp-cat-dropdown">
+                                    <button class = "text-uppercase text-gray34 fw-5 tp-cat-dropdown-btn" type = "button">
+                                        <span class = "tp-cat-btn-txt no-wrap me-2">all categories &nbsp; <i class="lni lni-chevron-down"></i></span>
 
-                                    <ul class = "dropdown-menu">
-                                        <li><a class = "dropdown-item" href = "#">Clothing</a></li>
-                                        <li><a class = "dropdown-item" href = "#">Accessories</a></li>
-                                        <li><a class = "dropdown-item" href = "#">Books & Learning</a></li>
-                                        <li><a class = "dropdown-item" href = "#">Apparels & Accessories</a></li>
-                                        <li><a class = "dropdown-item" href="">Mobile Phones & Accessories</a></li>
-                                    </ul>
+                                        <ul class = "tp-cat-dropdown-ul">
+                                            <li><a href = "#">Clothing</a></li>
+                                            <li><a href = "#">Accessories</a></li>
+                                            <li><a href = "#">Books & Learning</a></li>
+                                            <li><a href = "#">Apparels & Accessories</a></li>
+                                        </ul>
+                                    </button>
                                 </div>
 
-                                <div class = "tp-nav-search">
+                                <!-- <div class = "tp-nav-search">
                                     <form>
                                         <div class = "input-group">
                                             <input type = "text" class = "form-control bg-transparent border-0" placeholder="Search">
@@ -61,8 +57,11 @@
                                             </span>
                                         </div>
                                     </form>
-                                </div>
+                                </div> -->
                             </div>
+                            <!-- main nav modal -->
+                            <div class = "tp-nav-modal"></div>
+                            <!-- end of main nav modal -->
                             <div class = "tp-nav-blk-3 w-100">
                                 <button type = "button" class = "btn-icon d-lg-none" id = "tp-sidebar-hide-btn">
                                     <i class="lni lni-close"></i>
@@ -77,6 +76,9 @@
                                         </li>
                                         <li class = "tp-nav-itm">
                                             <a href = "blog.html" class = "tp-nav-link text-capitalize text-gray34 fw-5 font-inter">our blog</a>
+                                        </li>
+                                        <li class = "tp-nav-itm">
+                                            <a href = "contact.html" class = "tp-nav-link text-capitalize text-gray34 fw-5 font-inter">contact us</a>
                                         </li>
                                         <li class = "tp-nav-itm">
                                             <a href = "contact.html" class = "tp-nav-link text-capitalize text-gray34 fw-5 font-inter">contact us</a>
@@ -137,49 +139,87 @@
                                 <h2 class = "text-uppercase text-center">shop by category</h2>
                             </div>
                             <div class = "aura-catg-cnt">
-                                <div class = "aura-catg-list d-flex justify-content-center flex-wrap">
-                                    <a href = "product.html" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4 px-1 px-md-3">
-                                        <div class = "aura-catg-itm-ico">
-                                            <img src = "assets/images/catgs-icons/refrigerator-icon.svg" alt = "">
+                                <div class = "aura-catg-list">
+                                    <div class = "row justify-content-center">
+                                        <div class = "col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+                                            <a href = "product.html" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4 px-1 px-md-3">
+                                                <div class = "aura-catg-itm-ico">
+                                                    <img src = "assets/images/catgs-icons/refrigerator-icon.svg" alt = "">
+                                                </div>
+                                                <p class = "aura-catg-itm-txt text-capitalize mt-3 font-inter fw-7 fs-18 text-gray34 text">refrigerator</p>
+                                            </a>
                                         </div>
-                                        <p class = "aura-catg-itm-txt text-capitalize mt-3 font-inter fw-7 fs-18 text-gray34 text">refrigerator</p>
-                                    </a>
-                                    <a href = "product.html" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4 px-1 px-md-3">
-                                        <div class = "aura-catg-itm-ico">
-                                            <img src = "assets/images/catgs-icons/cooker-icon.svg" alt = "">
+
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+                                            <a href = "product.html" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4 px-1 px-md-3">
+                                                <div class = "aura-catg-itm-ico">
+                                                    <img src = "assets/images/catgs-icons/cooker-icon.svg" alt = "">
+                                                </div>
+                                                <p class = "aura-catg-itm-txt text-capitalize mt-3 font-inter fw-7 fs-18 text-gray34 text">rice cooker</p>
+                                            </a>
                                         </div>
-                                        <p class = "aura-catg-itm-txt text-capitalize mt-3 font-inter fw-7 fs-18 text-gray34 text">rice cooker</p>
-                                    </a>
-                                    <a href = "#" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4  px-1 px-md-3">
-                                        <div class = "aura-catg-itm-ico">
-                                            <img src = "assets/images/catgs-icons/vaccum-cleaner-icon.svg" alt = "">
+
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+                                            <a href = "#" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4  px-1 px-md-3">
+                                                <div class = "aura-catg-itm-ico">
+                                                    <img src = "assets/images/catgs-icons/vaccum-cleaner-icon.svg" alt = "">
+                                                </div>
+                                                <p class = "aura-catg-itm-txt text-capitalize mt-3 font-inter fw-7 fs-18 text-gray34 text">vaccum</p>
+                                            </a>
                                         </div>
-                                        <p class = "aura-catg-itm-txt text-capitalize mt-3 font-inter fw-7 fs-18 text-gray34 text">vaccum</p>
-                                    </a>
-                                    <a href = "#" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4  px-1 px-md-3">
-                                        <div class = "aura-catg-itm-ico">
-                                            <img src = "assets/images/catgs-icons/induction-stove-icon.svg" alt = "">
+
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+                                            <a href = "#" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4  px-1 px-md-3">
+                                                <div class = "aura-catg-itm-ico">
+                                                    <img src = "assets/images/catgs-icons/induction-stove-icon.svg" alt = "">
+                                                </div>
+                                                <p class = "aura-catg-itm-txt text-capitalize mt-3 font-inter fw-7 fs-18 text-gray34 text">induction</p>
+                                            </a>
                                         </div>
-                                        <p class = "aura-catg-itm-txt text-capitalize mt-3 font-inter fw-7 fs-18 text-gray34 text">induction</p>
-                                    </a>
-                                    <a href = "#" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4  px-1 px-md-3">
-                                        <div class = "aura-catg-itm-ico">
-                                            <img src = "assets/images/catgs-icons/air-conditioner-icon.svg" alt = "">
+
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+                                            <a href = "#" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4  px-1 px-md-3">
+                                                <div class = "aura-catg-itm-ico">
+                                                    <img src = "assets/images/catgs-icons/air-conditioner-icon.svg" alt = "">
+                                                </div>
+                                                <p class = "aura-catg-itm-txt text-uppercase mt-3 font-inter fw-7 fs-18 text-gray34 text">ac</p>
+                                            </a>
                                         </div>
-                                        <p class = "aura-catg-itm-txt text-uppercase mt-3 font-inter fw-7 fs-18 text-gray34 text">ac</p>
-                                    </a>
-                                    <a href = "#" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4  px-1 px-md-3">
-                                        <div class = "aura-catg-itm-ico">
-                                            <img src = "assets/images/catgs-icons/television-icon.svg" alt = "">
+
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+                                            <a href = "#" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4  px-1 px-md-3">
+                                                <div class = "aura-catg-itm-ico">
+                                                    <img src = "assets/images/catgs-icons/television-icon.svg" alt = "">
+                                                </div>
+                                                <p class = "aura-catg-itm-txt text-uppercase mt-3 font-inter fw-7 fs-18 text-gray34 text">tv</p>
+                                            </a>
                                         </div>
-                                        <p class = "aura-catg-itm-txt text-uppercase mt-3 font-inter fw-7 fs-18 text-gray34 text">tv</p>
-                                    </a>
-                                    <a href = "#" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4  px-1 px-md-3">
-                                        <div class = "aura-catg-itm-ico">
-                                            <img src = "assets/images/catgs-icons/grinder-icon.svg" alt = "">
+
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+                                            <a href = "#" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4  px-1 px-md-3">
+                                                <div class = "aura-catg-itm-ico">
+                                                    <img src = "assets/images/catgs-icons/grinder-icon.svg" alt = "">
+                                                </div>
+                                                <p class = "aura-catg-itm-txt text-capitalize mt-3 font-inter fw-7 fs-18 text-gray34 text">mixer grinder</p>
+                                            </a>
                                         </div>
-                                        <p class = "aura-catg-itm-txt text-capitalize mt-3 font-inter fw-7 fs-18 text-gray34 text">mixer grinder</p>
-                                    </a>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+                                            <a href = "#" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4  px-1 px-md-3">
+                                                <div class = "aura-catg-itm-ico">
+                                                    <img src = "assets/images/catgs-icons/grinder-icon.svg" alt = "">
+                                                </div>
+                                                <p class = "aura-catg-itm-txt text-capitalize mt-3 font-inter fw-7 fs-18 text-gray34 text">mixer grinder</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+                                            <a href = "#" class = "aura-catg-itm text-center d-flex flex-column align-items-center mb-4  px-1 px-md-3">
+                                                <div class = "aura-catg-itm-ico">
+                                                    <img src = "assets/images/catgs-icons/grinder-icon.svg" alt = "">
+                                                </div>
+                                                <p class = "aura-catg-itm-txt text-capitalize mt-3 font-inter fw-7 fs-18 text-gray34 text">mixer grinder</p>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -585,6 +625,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
         <!-- owl carousel -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- isotopes -->
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+        <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
         <!-- custom js -->
         <script src="assets/js/script.js"></script>
     </body>

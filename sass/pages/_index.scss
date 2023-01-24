@@ -34,6 +34,10 @@
                     .aura-catg-itm-ico{
                         border-color: $clr-deep-skyblue!important;
 
+                        &:hover{
+                            border-color: rgba(0, 174, 239, 0.6);
+                        }
+
                         img{
                             transform: scale(0.8);
                         }
@@ -115,6 +119,10 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
+        @include breakpoint-up(md){
+            grid-template-rows: repeat(2, 1fr);
+        }
+
         @include breakpoint-up(lg){
             gap: 29px;
         }
@@ -177,3 +185,4 @@
         }
     }
 }
+
